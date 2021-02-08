@@ -1,3 +1,14 @@
 [build]
-publish = "."
-command = "echo 'I be building' "
+publish = ""
+command = "echo 'I be building' " 
+functions = "func/"
+
+[[redirects]]
+from = "/api/yep"
+to = "/.netlify/functions/yep"
+status = 200
+
+[[redirects]]
+from = "/api/fetch"
+to = "/.netlify/functions/three"
+status = 200
